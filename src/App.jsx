@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Logo from './assets/rmGIF.gif'
 import { Filtrar } from './components/Filtrar'
 import { Card } from './components/Card'
+import "./index.css"
 
 function App() {
 	const [personajes, setPersonajes] = useState([])
