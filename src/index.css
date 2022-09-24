@@ -8,12 +8,6 @@ html {
 	font-size: 62.5%;
 }
 
-:root {
-	--color-primary: #08b2c9;
-	--color-secondary: #28527a;
-	--color-light: #dbf6e9;
-}
-
 body {
 	font-size: 1.6rem;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -48,7 +42,7 @@ input {
 	border: none;
 	border-radius: 0.5rem;
 	padding: 0 1rem;
-	outline: var(--color-primary);
+	outline: #bde6eb;
 	width: 100%;
 }
 
@@ -86,9 +80,9 @@ input {
 	text-align: right;
 }
 .estado {
-	background: var(--color-secondary);
+	background: #28527a;
 	display: inline-flex;
-	color: var(--color-light);
+	color: #dbf6e9;
 	padding: 0.5rem 1rem;
 	border-radius: 2.5rem;
 	font-size: 1.2rem;
