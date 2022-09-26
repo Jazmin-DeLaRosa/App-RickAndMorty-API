@@ -4,8 +4,8 @@
 ## ¿Cómo desplegar la aplicación? 
 
 Hacer fork del proyecto, 
-para instalar npm install.
-para ejecuatr en desarrollo npm start.
+para instalar npm install,
+para ejecuatr en desarrollo npm start,
 para ejecuatr en produccuión npm run build.
 
 
