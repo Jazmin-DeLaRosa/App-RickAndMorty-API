@@ -53,7 +53,6 @@ function App() {
 					</p>
 				)}
 			</section>
-			{/* section personajes */}
 		</div>
 	)
 }

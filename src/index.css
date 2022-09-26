@@ -1,165 +1,196 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-	font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-	font-size: 1.6rem;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	background: linear-gradient(160deg, #4888B9, #45BD79, #61C362, #A4D02A, #FEC600);
-	background-attachment: fixed;
-	color: rgba(0, 0, 0, 0.25);
+  font-size: 1.6rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: linear-gradient(
+    160deg,
+    #4888b9,
+    #45bd79,
+    #61c362,
+    #a4d02a,
+    #fec600
+  );
+  background-attachment: fixed;
+  color: rgba(0, 0, 0, 0.25);
 }
 
 .container {
-	width: 90%;
-	max-width: 120rem;
-	padding: 0 2rem;
-	margin: 0 auto;
+  width: 90%;
+  max-width: 120rem;
+  padding: 0 2rem;
+  margin: 0 auto;
 }
 
 .logo {
-	width: 15rem;
-	margin: 2rem auto;
+  width: 15rem;
+  margin: 2rem auto;
 }
 .logo img {
-	width: 100%;
+  width: 100%;
 }
 
 .filtrar {
-	width: 100%;
-	max-width: 60rem;
-	margin: 0 auto;
-	margin-bottom: 4rem;
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
 }
 input {
-	height: 4rem;
-	border: none;
-	border-radius: 0.5rem;
-	padding: 0 1rem;
-	outline: #bde6eb;
-	width: 100%;
+  height: 4rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  outline: #bde6eb;
+  width: 100%;
 }
 
 .lista-personajes {
-	width: 100%;
-	display: grid;
-	grid-template: auto / 1fr;
-	gap: 4rem;
+  width: 100%;
+  display: grid;
+  grid-template: auto / 1fr;
+  gap: 4rem;
 }
 
 .personaje {
-	background: #CDF267;
-	border-radius: 0.3rem;
-	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
-	display: grid;
-	grid-template: 10rem auto / 1fr;
-	overflow: hidden;
-	animation: showCard 0.5s linear;
+  background: #cdf267;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template: 15rem auto / 1fr;
+  overflow: hidden;
+  animation: showCard 0.5s linear;
+  width: 265px;
+  height: 325px;
 }
 .personaje:hover {
-	cursor: pointer;
-    /* transition: transform 150ms;
-    transform: scale(1); */
-    background: black;
-    color: #CDF267;
-    border-radius: .7em;
+  cursor: pointer;
+  background: black;
+  color: #cdf267;
+  border-radius: 0.7em;
+}
+.personaje figure {
+  position: absolute;
+  display: block;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  left: 50%;
+  margin: 0.7rem;
+  margin-top: 4rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.personaje figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 @keyframes showCard {
-	from {
-		opacity: 0;
-	}
+  from {
+    opacity: 0;
+  }
 }
-.personaje-header {
-	padding: 2rem;
-	text-align: right;
+.card {
+  padding: 5.2rem;
+  text-align: right;
 }
 .estado {
-	background: #28527a;
-	display: inline-flex;
-	color: #dbf6e9;
-	padding: 0.5rem 1rem;
-	border-radius: 2.5rem;
-	font-size: 1.2rem;
-	width: auto;
-	justify-content: space-between;
-	align-items: center;
-	column-gap: 1rem;
+  background: #28527a;
+  display: inline-flex;
+  color: #dbf6e9;
+  padding: 0.5rem 1rem;
+  border-radius: 2.5rem;
+  font-size: 1.7 rem;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+  margin: 1.5rem auto;
+  
 }
 .estado span {
-	display: block;
-	height: 1rem;
-	width: 1rem;
-	border-radius: 50%;
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
 }
 .Alive {
-	background: #31a703;
+  background: #31a703;
 }
 .Dead {
-	background: #d34b4b;
+  background: #d34b4b;
 }
 .unknown {
-	background: #afafaf;
+  background: #afafaf;
 }
-.personaje-body {
-	padding: 8rem 2rem 4rem;
-	position: relative;
+.card{
+  padding: 8rem 2rem 4rem;
+  position: relative;
+  margin: 6rem;
+  margin-top: 6rem;
 }
-.personaje-body figure {
-	position: absolute;
-	display: block;
-	width: 12rem;
-	height: 12rem;
-	border-radius: 50%;
-	top: -6rem;
-	left: 50%;
-	transform: translateX(-50%);
-	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.25);
-	overflow: hidden;
+.card figure {
+  /* position: absolute; */
+  /* display: block; */
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  top: -5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin: auto; 
 }
-.personaje-body figure img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
+.card figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
-.personaje-body h2 {
-	width: 100%;
-	background: #dbf6e9;
-	color: #000000;
-	border-radius: 0.5rem;
-	height: 3rem;
-	line-height: 3rem;
-	text-align: center;
-	transition-property: background, color;
-	font-size: 1.8rem;
+.card h2 {
+  width: 100%;
+  background: #dbf6e9;
+  color: #000000;
+  border-radius: 0.5rem;
+  height: 4.5rem;
+  margin-top: 1rem;
+  line-height: 2rem;
+  text-align: center;
+  transition-property: background, color;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
-.personaje-body p {
-	width: 100%;
-	background: #dbf6e9;
-	color: rgba(0, 0, 0, 0.25);
-	border-radius: 0.5rem;
-	height: 4rem;
-	margin-top: 2rem;
-	line-height: 4rem;
-	text-align: center;
+.card p {
+  width: 100%;
+  background: #dbf6e9;
+  color: rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  height: 4rem;
+  margin-top: 2rem;
+  line-height: 4rem;
+  text-align: center;
 }
-.personaje-body p span {
-	font-weight: bold;
+.card p span {
+  font-weight: bold;
 }
 
 @media screen and (min-width: 600px) {
-	.lista-personajes {
-		grid-template: auto / repeat(2, 1fr);
-	}
+  .lista-personajes {
+    grid-template: auto / repeat(2, 1fr);
+  }
 }
 
 @media screen and (min-width: 1000px) {
-	.lista-personajes {
-		grid-template: auto / repeat(3, 1fr);
-	}
+  .lista-personajes {
+    grid-template: auto / repeat(3, 1fr);
+  }
 }
